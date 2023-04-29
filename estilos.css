@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 2em;
+    color: darkmagenta;
+    pointer-events: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: darkmagenta;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navbar a:hover{
+    background: darkmagenta;
+    color: #f9f9f9;
+}
+
+.bienvenida{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: azure;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+ .bienvenida img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    pointer-events: none;
+ }
+ .sobre{
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center; 
+    background: #000060;
+}
+.sobre h2{
+    font-size: 3em;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.sobre p{
+    font-size: 1em;
+    color: #f9f9f9;
+    font-weight: 300;
+
+}
+
+
+
+.skills_section{
+
+    width: 100%;
+
+    height: 100vh;
+
+    padding: 0px 13%;
+
+    background-color: #000060;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+    position: absolute;
+    
+
+}
+
+.skills_head{
+
+    width: 100%;
+
+    margin-bottom: 100px;
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+}
+
+.skills_head h2{
+
+    font-size: 30px;
+
+    margin-bottom: -5px;
+
+}
+
+.skills_head h2 span{
+
+    color: #f9f9f9;
+
+}
+
+.skills_main {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-row-gap: 30px;
+
+    grid-column-gap: 50px;
+
+
+}
+.skills_main p{
+    color: #f9f9f9;
+}
+
+
+.skills_main .skill_bar .info{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding:  0 10px;
+
+}
+
+.skill_bar .info p:nth-child(2){
+
+    font-weight: 500;
+
+}
+
+.skill_bar .bar{
+
+    width: 100%;
+
+    height: 10px;
+
+    background-color: rgba(0, 0, 0, 0.144);
+
+    border-radius: 25px;
+
+    margin-top: 5px;
+
+    position: relative;
+
+}
+
+.skill_bar .bar span{
+
+    width: 50%;
+
+    height: 100%;
+
+    position: absolute;
+
+    background-color: darkmagenta;
+
+    border-radius: 25px;
+
+}
+
+.skill_bar .bar .html{
+
+    width: 60%;
+
+    animation: html 2s;
+
+}
+
+@keyframes html {
+
+    0%{
+
+        width: 0%;
+
+    }100%{
+
+        width: 60%;
+
+    }
+
+}
+
+.skill_bar .bar .css{
+
+    width: 65%;
+
+    animation: css 2s;
+
+}
+
+@keyframes css {
+
+    0%{
+
+        width: 0%;
+
+    }100%{
+
+        width: 65%;
+
+    }
+
+}
+
+.skill_bar .bar .office{
+
+    width: 80%;
+
+    animation: sass 2s;
+
+}
+
+
+.skill_bar .bar .js{
+
+    width: 20%;
+
+    animation: css 2s;
+
+}
+
+@keyframes js {
+
+    0%{
+
+        width: 0%;
+
+    }100%{
+
+        width: 20%;
+
+    }
+
+}
+
+
+
+.skill_bar .bar .gimp{
+
+    width: 70%;
+
+    animation: node 2s;
+
+}
+
+@keyframes gimp {
+
+    0%{
+
+        width: 0%;
+
+    }100%{
+
+        width: 70%;
+
+    }
+
+}
+
+.skill_bar .bar php{
+
+    width: 65%;
+
+    animation: php 2s;
+
+}
+
+@keyframes php {
+
+    0%{
+
+        width: 0%;
+
+    }100%{
+
+        width: 65%;
+
+    }
+
+}
+
+.skill_bar .bar .mysql{
+
+    width: 60%;
+
+    animation: mysql 2s;
+
+}
+
+@keyframes mysql {
+
+    0%{
+
+        width: 0%;
+
+    }100%{
+
+        width: 60%;
+
+    }
+
+}
